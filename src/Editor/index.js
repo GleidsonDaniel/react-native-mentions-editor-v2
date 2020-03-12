@@ -275,7 +275,8 @@ export class Editor extends React.Component {
 
     this.setState({
       inputText: text,
-      formattedText: this.formatText(text)
+      formattedText: this.formatText(text),
+      showMentions: false
     });
     this.stopTracking();
     this.sendMessageToFooter(text);
@@ -344,12 +345,14 @@ export class Editor extends React.Component {
     if (inputText === "" || !this.mentionsMap.size) return inputText;
     let formattedText = "";
     let lastIndex = 0;
+    const menArray = []
     this.mentionsMap.forEach((men, [start, end]) => {
       const initialStr =
         start === 1 ? "" : inputText.substring(lastIndex, start);
       lastIndex = end + 1;
       formattedText = formattedText.concat(initialStr);
       formattedText = formattedText.concat(`#[${men.username}](id:${men.id})`);
+      menArray.push(men.id)
       if (
         EU.isKeysAreSame(EU.getLastKeyInMap(this.mentionsMap), [start, end])
       ) {
@@ -357,7 +360,7 @@ export class Editor extends React.Component {
         formattedText = formattedText.concat(lastStr);
       }
     });
-    return formattedText;
+    return {formattedText, id: menArray};
   }
 
   sendMessageToFooter(text) {

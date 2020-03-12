@@ -54,11 +54,6 @@ export class MentionList extends React.PureComponent {
           style={styles.mentionsListContainer}
           keyboardShouldPersistTaps={"always"}
           horizontal={false}
-          ListEmptyComponent={
-            <View style={styles.loaderContainer}>
-              <ActivityIndicator />
-            </View>
-          }
           enableEmptySections={true}
           data={suggestions}
           keyExtractor={(item, index) => `${item.id}-${index}`}

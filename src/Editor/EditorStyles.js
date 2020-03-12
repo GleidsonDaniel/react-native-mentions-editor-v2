@@ -3,15 +3,12 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   container: {
     backgroundColor: "#fff",
-    borderColor: "green",
-    borderWidth: 1,
-    width: 300
+    flex: 1
   },
   textContainer: {
     alignSelf: "stretch",
     position: "relative",
-    minHeight: 40,
-    maxHeight: 140
+    minHeight: 50,
   },
   input: {
     fontSize: 16,
@@ -26,7 +23,7 @@ export default StyleSheet.create({
     width: "100%"
   },
   formmatedTextWrapper: {
-    minHeight: 40,
+    minHeight: 50,
     position: "absolute",
     top: 0,
     paddingHorizontal: 20,
@@ -41,7 +38,7 @@ export default StyleSheet.create({
     fontSize: 16,
     fontWeight: "400",
     backgroundColor: "rgba(36, 77, 201, 0.05)",
-    color: "#244dc9"
+    color: "#4747d9"
   },
   placeholderText: {
     color: "rgba(0, 0, 0, 0.1)",
