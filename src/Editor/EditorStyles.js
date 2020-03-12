@@ -14,7 +14,7 @@ export default StyleSheet.create({
     fontSize: 16,
     color: "#000",
     fontWeight: "400",
-    paddingHorizontal: 20,
+    paddingHorizontal: 7,
     minHeight: 40,
     position: "absolute",
     top: 0,
@@ -26,7 +26,7 @@ export default StyleSheet.create({
     minHeight: 50,
     position: "absolute",
     top: 0,
-    paddingHorizontal: 20,
+    paddingHorizontal: 7,
     paddingVertical: 5,
     width: "100%"
   },
