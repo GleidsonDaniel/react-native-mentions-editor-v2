@@ -5,9 +5,11 @@ export default StyleSheet.create({
     // flex:1,
     maxHeight: 300
   },
-  suggestionsPanelStyle: {},
+  suggestionsPanelStyle: {
+    position: 'relative'
+  },
   loaderContainer: {},
   mentionsListContainer: {
-    height: 100
+    height: 100,
   }
 });

@@ -28,7 +28,7 @@ export default StyleSheet.create({
     top: 0,
     paddingHorizontal: 7,
     paddingVertical: 5,
-    width: "100%"
+    width: "100%",
   },
   formmatedText: {
     fontSize: 16,
