@@ -9,8 +9,7 @@ export default StyleSheet.create({
     width: "100%",
     backgroundColor: "#fff",
     color: "rgba(0, 0, 0, 0.1)",
-    height: 50,
-    paddingHorizontal: 20,
+    height: 35,
     borderBottomWidth: 1,
     borderColor: "rgba(0, 0, 0, 0.05)"
   },
