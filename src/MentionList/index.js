@@ -38,7 +38,7 @@ export class MentionList extends React.PureComponent {
     const list = this.props.list;
     const suggestions =
       withoutAtKeyword !== ""
-        ? list.filter(user => user.username.includes(withoutAtKeyword))
+        ? list.filter(user => user.username.toLowerCase().includes(withoutAtKeyword.toLowerCase()))
         : list;
     if (!isTrackingStarted) {
       return null;
