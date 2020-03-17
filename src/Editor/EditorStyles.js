@@ -16,11 +16,11 @@ export default StyleSheet.create({
     fontWeight: "400",
     paddingHorizontal: 7,
     minHeight: 40,
-    position: "absolute",
+    // position: "absolute",
     top: 0,
     color: "transparent",
     alignSelf: "stretch",
-    width: "100%"
+    width: "100%",
   },
   formmatedTextWrapper: {
     minHeight: 50,

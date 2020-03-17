@@ -575,7 +575,7 @@ export class Editor extends React.Component {
                 selection={this.state.selection}
                 selectionColor={"#000"}
                 onSelectionChange={this.handleSelectionChange}
-                placeholder={state.placeholder}
+                // placeholder={state.placeholder}
                 onContentSizeChange={this.onContentSizeChange}
                 scrollEnabled={false}
               />
