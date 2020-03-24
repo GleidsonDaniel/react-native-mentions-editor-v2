@@ -12,7 +12,6 @@ export default StyleSheet.create({
   },
   input: {
     fontSize: 16,
-    color: "#000",
     fontWeight: "400",
     paddingHorizontal: 7,
     minHeight: 40,
@@ -20,7 +19,7 @@ export default StyleSheet.create({
     top: 0,
     color: "transparent",
     alignSelf: "stretch",
-    width: "100%",
+    width: "100%"
   },
   formmatedTextWrapper: {
     minHeight: 50,

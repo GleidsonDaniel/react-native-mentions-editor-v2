@@ -96,7 +96,9 @@ export class Editor extends React.Component {
       });
       this.mentionsMap.clear();
     }
-
+    if(prevProps.mentions === false && this.props.mentions === true){
+      this.onChange(`${this.state.inputText}#`, true)
+    }
     if (EU.whenTrue(this.props, prevProps, "showMentions")) {
       //don't need to close on false; user show select it.
       this.onChange(this.state.inputText, true);
@@ -575,7 +577,6 @@ export class Editor extends React.Component {
                 selection={this.state.selection}
                 selectionColor={"#000"}
                 onSelectionChange={this.handleSelectionChange}
-                // placeholder={state.placeholder}
                 onContentSizeChange={this.onContentSizeChange}
                 scrollEnabled={false}
               />
