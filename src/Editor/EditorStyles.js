@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 
 export default StyleSheet.create({
   container: {
@@ -19,7 +19,8 @@ export default StyleSheet.create({
     top: 0,
     color: "transparent",
     alignSelf: "stretch",
-    width: "100%"
+    width: "100%",
+    marginTop: Platform.OS === 'android' ? -30 : 0
   },
   formmatedTextWrapper: {
     minHeight: 50,
