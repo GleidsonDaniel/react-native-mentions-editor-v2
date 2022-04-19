@@ -11,21 +11,24 @@ export default StyleSheet.create({
     color: "rgba(0, 0, 0, 0.1)",
     height: 35,
     borderBottomWidth: 1,
-    borderColor: "rgba(0, 0, 0, 0.05)"
+    borderColor: "rgba(0, 0, 0, 0.05)",
   },
   text: {
     alignSelf: "center",
-    marginLeft: 12
+    marginLeft: 12,
   },
   title: {
     fontSize: 16,
-    color: "rgba(0, 0, 0, 0.8)"
+    color: "rgba(0, 0, 0, 0.8)",
   },
   thumbnailWrapper: {
     width: 35,
-    height: 35
+    height: 35,
   },
   thumbnailChar: {
-    fontSize: 16
-  }
+    fontSize: 16,
+  },
+  username: {
+    color: "rgb(117,117,117)",
+  },
 });

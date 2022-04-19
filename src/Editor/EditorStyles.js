@@ -3,7 +3,7 @@ import { StyleSheet, Platform } from "react-native";
 export default StyleSheet.create({
   container: {
     backgroundColor: "#fff",
-    flex: 1
+    flex: 1,
   },
   textContainer: {
     alignSelf: "stretch",
@@ -20,7 +20,7 @@ export default StyleSheet.create({
     color: "transparent",
     alignSelf: "stretch",
     width: "100%",
-    marginTop: Platform.OS === 'android' ? -30 : 0
+    marginTop: Platform.OS === "android" ? -30 : 0,
   },
   formmatedTextWrapper: {
     minHeight: 50,
@@ -32,16 +32,17 @@ export default StyleSheet.create({
   },
   formmatedText: {
     fontSize: 16,
-    fontWeight: "400"
+    fontWeight: "400",
+    color: "black",
   },
   mention: {
     fontSize: 16,
     fontWeight: "400",
     backgroundColor: "rgba(36, 77, 201, 0.05)",
-    color: "#4747d9"
+    color: "#4747d9",
   },
   placeholderText: {
     color: "rgba(0, 0, 0, 0.1)",
-    fontSize: 16
-  }
+    fontSize: 16,
+  },
 });
