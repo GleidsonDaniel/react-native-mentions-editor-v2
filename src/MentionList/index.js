@@ -60,6 +60,7 @@ export class MentionList extends React.PureComponent {
           renderItem={rowData => {
             return this.renderSuggestionsRow(rowData);
           }}
+          nestedScrollEnabled={true}
         />
       </Animated.View>
     );
